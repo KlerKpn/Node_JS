@@ -1,2 +1,4 @@
 # Node_JS
- Learning Day 1
+ Learning basics Node, NodeExpress, NodeMongoDB
+ 
+ npm run dev // to run nodemon
