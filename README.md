@@ -1,4 +1,10 @@
 # Node_JS
  Learning basics Node, NodeExpress, NodeMongoDB
+  
+ npm run dev // to run project `nodemon`
  
- npm run dev // to run nodemon
+ added:{
+        handlebars     `npm i express-handlebars`,
+        materializecss `CDN  https://materializecss.com/getting-started.html `,
+        to Node_Express 
+        }
