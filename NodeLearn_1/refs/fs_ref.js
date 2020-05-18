@@ -17,7 +17,7 @@ fs.writeFile(
         if (err) throw err
         console.log('Папка была создана')
 
-        fs.appendFile(path.join(__dirname, 'notes', 'mynotes.txt'),
+        fs.appendFile(path.join(__dirname, 'notes', 'mynotes.txt'),    // add string
             " i'm little better than yesterday",
             (err)=>{
                 if (err) throw err
