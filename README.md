@@ -6,5 +6,6 @@
  added:{
         handlebars     `npm i express-handlebars`,
         materializecss `CDN  https://materializecss.com/getting-started.html `,
+        uuid           `npm i uuid`
         to Node_Express 
         }
