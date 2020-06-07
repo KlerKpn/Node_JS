@@ -21,6 +21,27 @@ class Item {
         }
     }
 
+    static async update(item){
+        const items = await Item.getAll()
+              
+        const idx = items.findIndex(c => c.id === id)
+
+        items[idx] = item
+        return new Promise((resolve, reject)=>{
+            fs.writeFile(
+                path.join(__dirname, '..', 'data', 'items.json'),
+                JSON.stringify(items),
+                (err)=>{
+                    if(err){
+                        reject(err)
+                    } else{
+                        resolve()
+                    }
+                }
+            )
+        })
+    }
+
     async save(){
         const items = await Item.getAll()
         items.push(this.toJson())
@@ -34,7 +55,6 @@ class Item {
                     } else{
                         resolve()
                     }
-                
                 }
             )
         })
@@ -54,6 +74,11 @@ class Item {
                 }
             ) 
         })
+    }
+
+    static async getById(id){
+        const items = await Item.getAll()     
+        return items.find(c => c.id === id)
     }
 }
 

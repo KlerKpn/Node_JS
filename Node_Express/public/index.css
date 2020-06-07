@@ -1,3 +1,31 @@
 .nav-wrapper{
     padding: 0 2rem;
 }
+
+.price{
+    font-size: 2rem;
+}
+
+body{
+    background: #f3f3f3;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item h1{
+    margin-bottom: 2rem;
+}
+
+.item img{
+    max-width: 600px;
+    height: auto;
+}
+
+.item .price.big{
+    font-size: 2.5rem;
+}

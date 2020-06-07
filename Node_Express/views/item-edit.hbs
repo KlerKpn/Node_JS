@@ -1,0 +1,33 @@
+<h1>Редактирвоать {{item.title}}</h1>
+
+<form action="/items/edit" method="POST">
+    <div class="row">
+        <div class="input-field">
+        <input name="title" id="title" type="text" class="validate" required value="{{item.title}}">
+        <label for="title">Название</label>
+        <span class="helper-text" data-error="Введите название" data-success="Отлично"></span>
+    </div>
+
+    <div class="row">
+        <div class="input-field">
+        <input name="description" id="description" type="text" class="validate" required value="{{item.description}}">
+        <label for="description">Описание</label>
+        <span class="helper-text" data-error="Введите описание" data-success="Отлично"></span>
+    </div>
+
+    <div class="row">
+        <div class="input-field">
+        <input name="price" id="price" type="number" class="validate" required value="{{item.price}}">
+        <label for="price">Цена</label>
+        <span class="helper-text" data-error="Введите цену" data-success="Отлично"></span>
+    </div>
+
+    <div class="row">
+        <div class="input-field">
+        <input name="img" id="img" type="text" class="validate" required value="{{item.img}}">
+        <label for="img">URL картинки</label>
+        <span class="helper-text" data-error="Введите URL" data-success="Отлично"></span>
+    </div>
+    <input type="hidden" name="id" value="{{item.id}}">
+    <button class="btn btn-primary">Отправить</button>
+</form>
