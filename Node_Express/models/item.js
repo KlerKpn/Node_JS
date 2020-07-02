@@ -24,7 +24,7 @@ class Item {
     static async update(item){
         const items = await Item.getAll()
               
-        const idx = items.findIndex(c => c.id === id)
+        const idx = items.findIndex(c => c.id === item.id)
 
         items[idx] = item
         return new Promise((resolve, reject)=>{
